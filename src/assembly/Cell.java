@@ -59,6 +59,7 @@ public class Cell {
 	public void render(Pane pane, double scale, double offsetX, double offsetY) {
 		if(this.cell == null)return;
 
+		/*
 		Label text = new Label(this.cell.getStringCellValue());
 		text.setTranslateX(this.boundingBox.minX * scale + offsetX);
 		text.setTranslateY(this.boundingBox.minY * scale + offsetY);
@@ -67,6 +68,7 @@ public class Cell {
 		text.setFont(font);
 
 		pane.getChildren().add(text);
+		*/
 
 		XSSFCellStyle style = this.cell.getCellStyle();
 		boolean hasBorders = style.getBorderTop() != BorderStyle.NONE || style.getBorderLeft() != BorderStyle.NONE;
